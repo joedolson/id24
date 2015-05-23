@@ -88,7 +88,8 @@ function id24_create_links( $post_ID ) {
 			$html .= "
 					<div class='id24-link $service'>
 						<a href='" . esc_url( $url ) . "' rel='nofollow external' aria-describedby='description-$service'>
-							<span class='id24-icon $service' aria-hidden='true'>" . ucfirst( $service ) . "</span>
+							<span class='id24-icon $service' aria-hidden='true'></span>
+							<span class='id24-text $service'>" . ucfirst( $service ) . "</span>
 						</a>
 						<span class='description' role='tooltip' id='description-$service'>
 							" . __( 'Share this post' ) . "
